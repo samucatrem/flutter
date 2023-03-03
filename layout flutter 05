@@ -1,0 +1,41 @@
+void main(){
+  
+   runApp(MaterialApp(
+  
+      debugShowCheckedModeBanner: false,
+      //definiçao de layout
+      home: Scaffold(
+        //definiçao de barra inicial
+        appBar: AppBar(
+          title: Text("Instagram"),
+          backgroundColor: Colors.green,
+        ),
+        //definiçao de corpo de aplicaçao
+        body:Padding(
+            padding: EdgeInsets.all(16),
+          child: Text("Conteudo Principal"),
+        ),
+        //definiçao de rodape
+      bottomNavigationBar: BottomAppBar(
+         color: Colors.amber,
+           child: Padding(
+              padding: EdgeInsets.all(16),
+                child: Row(
+                children:<Widget> [
+                    Text('Texto1'),
+                    Text('Texto2')
+                   ] 
+                 ),
+                ),  
+               ),
+             ),
+  
+     
+   ));
+   
+
+
+
+
+}
+  
